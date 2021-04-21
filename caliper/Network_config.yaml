@@ -89,28 +89,28 @@ organizations:
 
 orderers:
   orderer.example.com:
-    url: grpcs://35.192.8.73:7050
+    url: grpcs://10.128.0.4:7050
     grpcOptions:
       ssl-target-name-override: orderer.example.com
     tlsCACerts:
         path: ./crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 
   orderer2.example.com:
-    url: grpcs://35.192.8.73:8050
+    url: grpcs://10.128.0.4:8050
     grpcOptions:
       ssl-target-name-override: orderer2.example.com
     tlsCACerts:
         path: ./crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 
   orderer3.example.com:
-    url: grpcs://35.192.8.73:9050
+    url: grpcs://10.128.0.4:9050
     grpcOptions:
       ssl-target-name-override: orderer3.example.com
     tlsCACerts:
         path: ./crypto-config/ordererOrganizations/example.com/orderers/orderer3.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 peers:
   peer0.org1.example.com:
-    url: grpcs://35.192.111.145:7051
+    url: grpcs://10.128.0.3:7051
     grpcOptions:
       ssl-target-name-override: peer0.org1.example.com
       grpc.keepalive_time_ms: 600000
@@ -118,7 +118,7 @@ peers:
       path: ./crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
 
   peer0.org2.example.com:
-    url: grpcs://35.192.8.73:9051
+    url: grpcs://10.128.0.4:9051
     grpcOptions:
       ssl-target-name-override: peer0.org2.example.com
       grpc.keepalive_time_ms: 600000
@@ -129,7 +129,7 @@ peers:
 
 certificateAuthorities:
   ca-org1:
-    url: https://35.192.111.145:7054
+    url: https://10.128.0.3:7054
     httpOptions:
       verify: false
     tlsCACerts:
@@ -139,7 +139,7 @@ certificateAuthorities:
       enrollSecret: adminpw
 
   ca-org2:
-    url: https://35.192.8.73:9054
+    url: https://10.128.0.4:9054
     httpOptions:
       verify: false
     tlsCACerts:
