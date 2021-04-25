@@ -36,29 +36,61 @@ class CreateCarWorkload extends WorkloadModuleBase {
     /**
      * Assemble TXs for the round.
      * @return {Promise<TxStatus[]>}
-     */
+    */
      async submitTransaction() {
         this.txIndex++;
         let carNumber
-
-        if(this.txIndex % 2 == 0 ) {
-            //console.log(this.txIndex-1);
+        carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
+        var s=carNumber.slice(-1)
+/*
+//######### 20% MVCC Conflict         
+        if(s == 2 || s==3 ) {
+            carNumber =  'Client' + this.workerIndex+ '_CAR1';
+        }
+        else {
+            carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();           
+        }
+*/
+/*
+//######### 40% MVCC Conflict         
+        if(s == 2 || s==3 || s == 4 || s==5) {
+            carNumber =  'Client' + this.workerIndex+ '_CAR1';
+        }
+        else {
+            carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();           
+        }
+*/
+/*
+//######### 60% MVCC Conflict         
+        if(s == 2 || s==3 || s == 4 || s==5){
             carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
         }
         else {
-            //console.log(this.txIndex-1);
             carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
         }
-        /*if(this.txIndex % 2 == 0) {
-            //console.log(this.txIndex-1);
-            carNumber = 'Client' + this.workerIndex + '_CAR' + this.txIndex.toString();
+*/
+/* 
+//######### 80% MVCC Conflict         
+        if(s == 2 || s==3 ) {
+            carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
         }
         else {
-            //console.log(this.txIndex-1);
-            carNumber = 'Client' + this.workerIndex + '_CAR' + (this.txIndex-1).toString();
-        }*/
-   // carNumber = 'Client' + this.workerIndex + '_CAR'+ txIndex.toString(); 
-      
+            carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
+        }
+*/  
+
+//######### 100% MVCC Conflict 
+//carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
+
+//######### 50% MVCC Conflict         
+        if(s == 2 || s==3 || s == 4 || s==5 ||s == 6  ) {
+            carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
+        }
+        else {
+            carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
+        }
+
+
         let newCarOwner = owners[Math.floor(Math.random() * owners.length)];
 
         let args = {
