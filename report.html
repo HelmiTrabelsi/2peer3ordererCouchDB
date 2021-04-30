@@ -158,10 +158,10 @@
                     </tr>
 
                     <tr>
-                         <td>Create Car.</td> <td>1000</td> <td>0</td> <td>319.8</td> <td>0.86</td> <td>0.17</td> <td>0.44</td> <td>294.2</td>
+                         <td>Create Car.</td> <td>100</td> <td>0</td> <td>147.3</td> <td>2.58</td> <td>0.45</td> <td>1.54</td> <td>57.3</td>
                     </tr>
                     <tr>
-                         <td>change Car Owner.</td> <td>500</td> <td>500</td> <td>250.8</td> <td>1.27</td> <td>0.17</td> <td>0.70</td> <td>242.2</td>
+                         <td>change Car Owner.</td> <td>54</td> <td>46</td> <td>35.0</td> <td>2.19</td> <td>0.51</td> <td>1.51</td> <td>26.0</td>
                     </tr>
                 </table>
             </div>
@@ -171,7 +171,7 @@
                 <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
   type: fixed-rate
   opts:
-    tps: 250
+    tps: 30
 </pre>
                         <h3>Performance metrics for Create Car.</h3>
                             <table style="min-width: 100%;">
@@ -179,7 +179,7 @@
                                      <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
                                 </tr>
                                 <tr>
-                                     <td>Create Car.</td> <td>1000</td> <td>0</td> <td>319.8</td> <td>0.86</td> <td>0.17</td> <td>0.44</td> <td>294.2</td>
+                                     <td>Create Car.</td> <td>100</td> <td>0</td> <td>147.3</td> <td>2.58</td> <td>0.45</td> <td>1.54</td> <td>57.3</td>
                                 </tr>
                             </table>
                         <h3>Resource utilization for Create Car.</h3>
@@ -191,7 +191,7 @@
                 <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
   type: fixed-rate
   opts:
-    tps: 250
+    tps: 30
 </pre>
                         <h3>Performance metrics for change Car Owner.</h3>
                             <table style="min-width: 100%;">
@@ -199,7 +199,7 @@
                                      <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
                                 </tr>
                                 <tr>
-                                     <td>change Car Owner.</td> <td>500</td> <td>500</td> <td>250.8</td> <td>1.27</td> <td>0.17</td> <td>0.70</td> <td>242.2</td>
+                                     <td>change Car Owner.</td> <td>54</td> <td>46</td> <td>35.0</td> <td>2.19</td> <td>0.51</td> <td>1.51</td> <td>26.0</td>
                                 </tr>
                             </table>
                         <h3>Resource utilization for change Car Owner.</h3>
@@ -213,23 +213,23 @@
   number: 2
 rounds:
   - label: Create Car.
-    txNumber: 1000
+    txNumber: 100
     rateControl:
       type: fixed-rate
       opts:
-        tps: 250
+        tps: 30
     workload:
       module: caliper&#x2F;fabcar&#x2F;createCar.js
   - label: change Car Owner.
-    txNumber: 1000
+    txNumber: 100
     rateControl:
       type: fixed-rate
       opts:
-        tps: 250
+        tps: 30
     workload:
       module: caliper&#x2F;fabcar&#x2F;aaa.js
       arguments:
-        assets: 1000
+        assets: 100
 </pre>
                 <h3>SUT</h3>
                 <pre id="sutdetails">not provided</pre>

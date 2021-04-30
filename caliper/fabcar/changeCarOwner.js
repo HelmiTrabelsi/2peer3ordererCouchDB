@@ -79,7 +79,7 @@ class ChangeCarOwnerWorkload extends WorkloadModuleBase {
             this.txIndex = 0;
         }
 
-        await this.sutAdapter.sendRequests(args);
+        let result= await this.sutAdapter.sendRequests(args);
     }
 }
 
