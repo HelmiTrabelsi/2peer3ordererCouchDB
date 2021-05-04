@@ -81,7 +81,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
 
 //######### 100% MVCC Conflict 
 //carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
-
+/*
 //######### 50% MVCC Conflict         
         if(s == 2 || s==3 || s == 4 || s==5 ||s == 6  ) {
             carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
@@ -89,7 +89,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
         else {
             carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
         }
-
+*/
 
         let newCarOwner = owners[Math.floor(Math.random() * owners.length)];
 

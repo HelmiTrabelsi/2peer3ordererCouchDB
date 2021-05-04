@@ -2,27 +2,28 @@
 test:
   workers:
     type: local
-    number: 2
+    number: 1
   rounds:
     - label: Create Car.
-      txNumber: 100
+      txNumber: 1000
       rateControl:
         type: fixed-rate
         opts:
-          tps: 30
+          tps: 100
       workload:
         module: caliper/fabcar/createCar.js
 # This is an example of one commented line in a YAML file 
     - label: change Car Owner.
-      txNumber: 100
+      txNumber: 1000
       rateControl:
-        type: fixed-rate
+        type: maximum-rate
         opts:
-          tps: 30
+          tps: 200
+          step: 100
       workload:
         module: caliper/fabcar/aaa.js
         arguments:
-          assets: 100
+          assets: 1000
 
 
    
