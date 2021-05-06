@@ -15,6 +15,12 @@
 'use strict';
 
 const { WorkloadModuleBase } = require('@hyperledger/caliper-core');
+var MVCC = 0
+var EMVCC = 0
+var EMVCC_time=0
+var MVCC_time=0
+var success=0
+var success_time=0
 
 const colors = ['blue', 'red', 'green', 'yellow', 'black', 'purple', 'white', 'violet', 'indigo', 'brown'];
 const makes = ['Toyota', 'Ford', 'Hyundai', 'Volkswagen', 'Tesla', 'Peugeot', 'Chery', 'Fiat', 'Tata', 'Holden'];
@@ -31,65 +37,66 @@ class CreateCarWorkload extends WorkloadModuleBase {
     constructor() {
         super();
         this.txIndex = 0;
+
     }
 
     /**
      * Assemble TXs for the round.
      * @return {Promise<TxStatus[]>}
     */
-     async submitTransaction() {
+    async submitTransaction() {
         this.txIndex++;
         let carNumber
-        carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
-        var s=carNumber.slice(-1)
-/*
-//######### 20% MVCC Conflict         
-        if(s == 2 || s==3 ) {
-            carNumber =  'Client' + this.workerIndex+ '_CAR1';
-        }
-        else {
-            carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();           
-        }
-*/
-/*
-//######### 40% MVCC Conflict         
-        if(s == 2 || s==3 || s == 4 || s==5) {
-            carNumber =  'Client' + this.workerIndex+ '_CAR1';
-        }
-        else {
-            carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();           
-        }
-*/
-/*
-//######### 60% MVCC Conflict         
-        if(s == 2 || s==3 || s == 4 || s==5){
-            carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
-        }
-        else {
-            carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
-        }
-*/
-/* 
-//######### 80% MVCC Conflict         
-        if(s == 2 || s==3 ) {
-            carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
-        }
-        else {
-            carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
-        }
-*/  
+        carNumber = 'Client' + this.workerIndex + '_CAR' + this.txIndex.toString();
+        var s = carNumber.slice(-1)
 
-//######### 100% MVCC Conflict 
-//carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
-/*
-//######### 50% MVCC Conflict         
-        if(s == 2 || s==3 || s == 4 || s==5 ||s == 6  ) {
-            carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
+        //######### 20% MVCC Conflict         
+        if (s == 2 || s == 3) {
+            carNumber = 'Client' + this.workerIndex + '_CAR1';
         }
         else {
-            carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
+            carNumber = 'Client' + this.workerIndex + '_CAR' + this.txIndex.toString();
         }
-*/
+
+        /*
+        //######### 40% MVCC Conflict         
+                if(s == 2 || s==3 || s == 4 || s==5) {
+                    carNumber =  'Client' + this.workerIndex+ '_CAR1';
+                }
+                else {
+                    carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();           
+                }
+        */
+        /*
+        //######### 60% MVCC Conflict         
+                if(s == 2 || s==3 || s == 4 || s==5){
+                    carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
+                }
+                else {
+                    carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
+                }
+        */
+        /* 
+        //######### 80% MVCC Conflict         
+                if(s == 2 || s==3 ) {
+                    carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
+                }
+                else {
+                    carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
+                }
+        */
+
+        //######### 100% MVCC Conflict 
+        //carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
+        /*
+        //######### 50% MVCC Conflict         
+                if(s == 2 || s==3 || s == 4 || s==5 ||s == 6  ) {
+                    carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
+                }
+                else {
+                    carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
+                }
+        */
 
         let newCarOwner = owners[Math.floor(Math.random() * owners.length)];
 
@@ -104,17 +111,54 @@ class CreateCarWorkload extends WorkloadModuleBase {
         if (this.txIndex === this.roundArguments.assets) {
             this.txIndex = 0;
         }
-
         const response = await this.sutAdapter.sendRequests(args)
-        /*.then(function(data) {
-         var res=JSON.parse(JSON.stringify(data))
-          console.log ("122222222222222222222222222222");
-        console.log (res.status.error_messages);
-      })
-      .catch(function(error) {
-        console.log ("111111111111111111111111111111111111111111111111111111"+error);
-    });
-       //console.log(res)*/
+            .then(function (data) {
+                var res = JSON.parse(JSON.stringify(data))
+                var time_create = res.status.time_create
+                var time_final = res.status.time_final
+                var diff = time_final - time_create
+                console.log(res)
+                /*if (res.status.result === null && res.status.status == 'failed') {
+                    EMVCC++
+                    EMVCC_time=EMVCC_time+diff
+                } else if (res.status.result.type === 'Buffer' && res.status.status == 'failed') {
+                    MVCC++
+                    console.log("eeeeeeee"+ res.status.result.data)
+                }*/
+
+                if (diff<700 && res.status.status == 'failed') {
+                    console.log("Time to dectet conflict for transaction " + res.status.id + ": " + diff);
+                    EMVCC++
+                    EMVCC_time=EMVCC_time+diff
+                
+                } else if (diff>700 && res.status.status == 'failed') {
+                    console.log("Time to dectet conflict for transaction " + res.status.id + ": " + diff);
+                    MVCC++
+                    MVCC_time=MVCC_time+diff
+
+                } else if (res.status.status == 'success') {
+                    success++
+                    success_time=success_time+diff
+
+                }
+
+                
+                
+            })
+            .catch(function (error) {
+                console.log("111111111111111111111111111111111111111111111111111111" + error);
+            })
+
+    }
+    async cleanupWorkloadModule() {
+        console.log("Number of rejected Tx with EMVCC error " + EMVCC)
+        console.log("Number of rejected Tx with MVCC error " + MVCC)
+        //console.log("success " + success)
+        console.log("EMVCC Avg Time to detect conflict: " + EMVCC_time/EMVCC)
+        console.log("MVCC Avg Time to detect conflict:  " + MVCC_time/MVCC) 
+        console.log("success Avg Time : " + success_time/success)
+        
+        
     }
 
 }

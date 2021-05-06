@@ -2,7 +2,7 @@
 test:
   workers:
     type: local
-    number: 1
+    number: 2
   rounds:
     - label: Create Car.
       txNumber: 1000
@@ -16,10 +16,9 @@ test:
     - label: change Car Owner.
       txNumber: 1000
       rateControl:
-        type: maximum-rate
+        type: fixed-rate
         opts:
-          tps: 200
-          step: 100
+          tps: 100
       workload:
         module: caliper/fabcar/aaa.js
         arguments:
