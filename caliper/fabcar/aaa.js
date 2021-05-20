@@ -45,6 +45,8 @@ class CreateCarWorkload extends WorkloadModuleBase {
      * @return {Promise<TxStatus[]>}
     */
     async submitTransaction() {
+        const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+        var r= random(2, 6);
         this.txIndex++;
         let carNumber
         carNumber = 'Client' + this.workerIndex + '_CAR' + this.txIndex.toString();
@@ -52,7 +54,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
 
         //######### 20% MVCC Conflict         
         if (s == 2 || s == 3) {
-            carNumber = 'Client' + this.workerIndex + '_CAR1';
+            carNumber =  'Client' + this.workerIndex+ '_CAR'+ (this.txIndex-r).toString();
         }
         else {
             carNumber = 'Client' + this.workerIndex + '_CAR' + this.txIndex.toString();
@@ -61,7 +63,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
         /*
         //######### 40% MVCC Conflict         
                 if(s == 2 || s==3 || s == 4 || s==5) {
-                    carNumber =  'Client' + this.workerIndex+ '_CAR1';
+                    carNumber =  'Client' + this.workerIndex+ '_CAR'+ (this.txIndex-r).toString();
                 }
                 else {
                     carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();           
@@ -73,7 +75,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
                     carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
                 }
                 else {
-                    carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
+                    carNumber =  'Client' + this.workerIndex+ '_CAR'+ (this.txIndex-r).toString();
                 }
         */
         /* 
@@ -82,7 +84,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
                     carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
                 }
                 else {
-                    carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
+                    carNumber =  'Client' + this.workerIndex+ '_CAR'+ (this.txIndex-r).toString();
                 }
         */
 
@@ -94,7 +96,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
                     carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
                 }
                 else {
-                    carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
+                    carNumber =  'Client' + this.workerIndex+ '_CAR'+ (this.txIndex-r).toString(); 
                 }
         */
 
