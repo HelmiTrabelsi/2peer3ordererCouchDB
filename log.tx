@@ -1,0 +1,1544 @@
+2021.05.31-06:09:28.726[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/helmi/2peer3ordererCouchDB
+2021.05.31-06:09:28.728[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/helmi/2peer3ordererCouchDB/caliper/fabcar/config.yaml
+2021.05.31-06:09:28.728[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: /home/helmi/2peer3ordererCouchDB/caliper/Network_config.yaml
+2021.05.31-06:09:28.728[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: fabric
+2021.05.31-06:09:28.785[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2021.05.31-06:09:28.786[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2021.05.31-06:09:29.616[32m info [39m [caliper] [fabric-connector] 	Initializing standard connector compatible with installed SDK: 1.4.11
+2021.05.31-06:09:29.893[32m info [39m [caliper] [caliper-engine] 	Skipping start commands due to benchmark flow conditioning
+2021.05.31-06:09:29.893[32m info [39m [caliper] [caliper-engine] 	Skipping initialization phase due to benchmark flow conditioning
+2021.05.31-06:09:29.893[32m info [39m [caliper] [caliper-engine] 	Skipping install smart contract phase due to benchmark flow conditioning
+2021.05.31-06:09:29.898[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2021.05.31-06:09:29.901[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 seconds
+2021.05.31-06:09:29.903[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2021.05.31-06:09:29.905[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 1
+2021.05.31-06:09:29.916[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2021.05.31-06:09:29.917[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2021.05.31-06:09:29.919[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be connected...
+2021.05.31-06:09:30.620[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/helmi/2peer3ordererCouchDB
+2021.05.31-06:09:30.622[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/helmi/2peer3ordererCouchDB/caliper/fabcar/config.yaml
+2021.05.31-06:09:30.622[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/helmi/2peer3ordererCouchDB/caliper/Network_config.yaml
+2021.05.31-06:09:30.622[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2021.05.31-06:09:30.715[32m info [39m [caliper] [worker-orchestrator] 	1 workers connected, progressing to worker assignment phase.
+2021.05.31-06:09:30.715[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2021.05.31-06:09:30.716[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be assigned...
+2021.05.31-06:09:30.790[32m info [39m [caliper] [worker-orchestrator] 	1 workers assigned, progressing to worker initialization phase.
+2021.05.31-06:09:30.790[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be ready...
+2021.05.31-06:09:32.389[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2021.05.31-06:09:32.389[32m info [39m [caliper] [fabric-connector] 	Initializing standard connector compatible with installed SDK: 1.4.11
+2021.05.31-06:09:32.409[32m info [39m [caliper] [connectors/v1/fabric] 	Fabric SDK version: 1.4.11; TLS: server
+2021.05.31-06:09:32.413[32m info [39m [caliper] [connectors/v1/fabric] 	Org1's admin's materials are successfully loaded
+2021.05.31-06:09:32.420[32m info [39m [caliper] [connectors/v1/fabric] 	Org2's admin's materials are successfully loaded
+2021.05.31-06:09:32.435[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2021.05.31-06:09:32.443[32m info [39m [caliper] [worker-orchestrator] 	1 workers ready, progressing to test preparation phase.
+2021.05.31-06:09:32.443[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (Create Car.)
+2021.05.31-06:09:32.446[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2021.05.31-06:09:32.649[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2021.05.31-06:09:32.653[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2021.05.31-06:09:32.653[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2021.05.31-06:09:32.655[32m info [39m [caliper] [worker-orchestrator] 	1 workers prepared, progressing to test phase.
+2021.05.31-06:09:32.655[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2021.05.31-06:09:32.657[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2021.05.31-06:09:32.662[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2021.05.31-06:09:36.059[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2021.05.31-06:09:41.075[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2021.05.31-06:09:41.078[32m info [39m [caliper] [report-builder] 	### Test result ###
+2021.05.31-06:09:41.090[32m info [39m [caliper] [report-builder] 	
++-------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name        | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| Create Car. | 100  | 0    | -303.0          | 2.29            | 0.33            | 1.32            | 100000.0         |
++-------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2021.05.31-06:09:41.091[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (Create Car.) in 2.392 seconds
+2021.05.31-06:09:41.092[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2021.05.31-06:09:41.092[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2021.05.31-06:09:46.093[32m info [39m [caliper] [round-orchestrator] 	Started round 2 (change Car Owner.)
+2021.05.31-06:09:46.096[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#1
+2021.05.31-06:09:46.192[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 1 is starting...
+2021.05.31-06:09:46.194[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 1 is completed
+2021.05.31-06:09:46.194[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#1
+2021.05.31-06:09:46.195[32m info [39m [caliper] [worker-orchestrator] 	1 workers prepared, progressing to test phase.
+2021.05.31-06:09:46.195[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2021.05.31-06:09:46.197[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#1
+2021.05.31-06:09:46.198[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+undefined
+2021.05.31-06:09:46.205[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[2ec326977a] life-cycle errors:
+	- The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type undefined
+{ status:
+   { id:
+      '2ec326977a7675a88a4b34f9137a86098daa9345dbc3177d2dc7a4db1f9e5ee6',
+     status: 'failed',
+     time_create: 1622455786203,
+     time_final: 1622455786204,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 2ec326977a7675a88a4b34f9137a86098daa9345dbc3177d2dc7a4db1f9e5ee6: 1
+11111111
+Car80
+Car1
+Car18
+Car1
+2021.05.31-06:09:46.290[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[fa7b191648] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: fa7b191648a73fa2c9229b9a7cf5ee34ef75b2db119ab30cdcf4f18dadb058eb
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: fa7b191648a73fa2c9229b9a7cf5ee34ef75b2db119ab30cdcf4f18dadb058eb
+{ status:
+   { id:
+      'fa7b191648a73fa2c9229b9a7cf5ee34ef75b2db119ab30cdcf4f18dadb058eb',
+     status: 'failed',
+     time_create: 1622455786279,
+     time_final: 1622455786290,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction fa7b191648a73fa2c9229b9a7cf5ee34ef75b2db119ab30cdcf4f18dadb058eb: 11
+Car4
+Car12
+Car92
+Car98
+Car19
+Car1
+2021.05.31-06:09:46.407[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[7bc65062e8] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 7bc65062e80628ba9901008f1ac6c1d2601f4109db141a2915e09e3e6c483095
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 7bc65062e80628ba9901008f1ac6c1d2601f4109db141a2915e09e3e6c483095
+{ status:
+   { id:
+      '7bc65062e80628ba9901008f1ac6c1d2601f4109db141a2915e09e3e6c483095',
+     status: 'failed',
+     time_create: 1622455786398,
+     time_final: 1622455786407,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 7bc65062e80628ba9901008f1ac6c1d2601f4109db141a2915e09e3e6c483095: 9
+Car1
+2021.05.31-06:09:46.426[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[a8f6edeaeb] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: a8f6edeaeb69f44420b3c47ceecbd3c46567b060c3654154b30d36d519ce2e0a
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: a8f6edeaeb69f44420b3c47ceecbd3c46567b060c3654154b30d36d519ce2e0a
+{ status:
+   { id:
+      'a8f6edeaeb69f44420b3c47ceecbd3c46567b060c3654154b30d36d519ce2e0a',
+     status: 'failed',
+     time_create: 1622455786419,
+     time_final: 1622455786426,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction a8f6edeaeb69f44420b3c47ceecbd3c46567b060c3654154b30d36d519ce2e0a: 7
+Car7
+Car8
+Car14
+Car1
+2021.05.31-06:09:46.507[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[2c1c319242] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 2c1c3192427161fbe65b2e3300a2297301b44124dcaadb0473d151d558724223
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 2c1c3192427161fbe65b2e3300a2297301b44124dcaadb0473d151d558724223
+{ status:
+   { id:
+      '2c1c3192427161fbe65b2e3300a2297301b44124dcaadb0473d151d558724223',
+     status: 'failed',
+     time_create: 1622455786499,
+     time_final: 1622455786507,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 2c1c3192427161fbe65b2e3300a2297301b44124dcaadb0473d151d558724223: 8
+Car84
+Car45
+Car1
+2021.05.31-06:09:46.569[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[89784ddf7e] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 89784ddf7efd785359bbfa6d12e16dbf8182223ab7a5b111d700949030c2a148
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 89784ddf7efd785359bbfa6d12e16dbf8182223ab7a5b111d700949030c2a148
+{ status:
+   { id:
+      '89784ddf7efd785359bbfa6d12e16dbf8182223ab7a5b111d700949030c2a148',
+     status: 'failed',
+     time_create: 1622455786559,
+     time_final: 1622455786569,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 89784ddf7efd785359bbfa6d12e16dbf8182223ab7a5b111d700949030c2a148: 10
+Car1
+2021.05.31-06:09:46.589[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[35407f375e] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 35407f375ed9c5bdd8b593fa8eba9ff312b237616172decd48a18a75c3886ce1
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 35407f375ed9c5bdd8b593fa8eba9ff312b237616172decd48a18a75c3886ce1
+{ status:
+   { id:
+      '35407f375ed9c5bdd8b593fa8eba9ff312b237616172decd48a18a75c3886ce1',
+     status: 'failed',
+     time_create: 1622455786579,
+     time_final: 1622455786588,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 35407f375ed9c5bdd8b593fa8eba9ff312b237616172decd48a18a75c3886ce1: 9
+Car19
+2021.05.31-06:09:46.607[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[6d84a21be4] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 6d84a21be462dcb1fc45ab23d3e74aaa23ca20b706361b687ffe4666fa96e05a
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 6d84a21be462dcb1fc45ab23d3e74aaa23ca20b706361b687ffe4666fa96e05a
+{ status:
+   { id:
+      '6d84a21be462dcb1fc45ab23d3e74aaa23ca20b706361b687ffe4666fa96e05a',
+     status: 'failed',
+     time_create: 1622455786599,
+     time_final: 1622455786607,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 6d84a21be462dcb1fc45ab23d3e74aaa23ca20b706361b687ffe4666fa96e05a: 8
+Car9
+Car46
+Car15
+Car16
+Car3
+Car17
+Car24
+Car73
+Car12
+2021.05.31-06:09:46.787[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[3be34b9674] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 3be34b9674f707ccf76c2f784dcd475f07e4c2a685772c8d369036807c55d7d8
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 3be34b9674f707ccf76c2f784dcd475f07e4c2a685772c8d369036807c55d7d8
+{ status:
+   { id:
+      '3be34b9674f707ccf76c2f784dcd475f07e4c2a685772c8d369036807c55d7d8',
+     status: 'failed',
+     time_create: 1622455786778,
+     time_final: 1622455786787,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 3be34b9674f707ccf76c2f784dcd475f07e4c2a685772c8d369036807c55d7d8: 9
+Car52
+Car4
+2021.05.31-06:09:46.826[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[3adda8291d] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 3adda8291deddc9089c94139862bb14fcdf8a05a87b56bfc29207a75820eded6
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 3adda8291deddc9089c94139862bb14fcdf8a05a87b56bfc29207a75820eded6
+{ status:
+   { id:
+      '3adda8291deddc9089c94139862bb14fcdf8a05a87b56bfc29207a75820eded6',
+     status: 'failed',
+     time_create: 1622455786819,
+     time_final: 1622455786826,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 3adda8291deddc9089c94139862bb14fcdf8a05a87b56bfc29207a75820eded6: 7
+Car8
+2021.05.31-06:09:46.846[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[5bb755a29c] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 5bb755a29cb0cd840f294d081779351f1a01868ee48a0cd8cefb7036f81907a8
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 5bb755a29cb0cd840f294d081779351f1a01868ee48a0cd8cefb7036f81907a8
+{ status:
+   { id:
+      '5bb755a29cb0cd840f294d081779351f1a01868ee48a0cd8cefb7036f81907a8',
+     status: 'failed',
+     time_create: 1622455786839,
+     time_final: 1622455786846,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 5bb755a29cb0cd840f294d081779351f1a01868ee48a0cd8cefb7036f81907a8: 7
+Car2
+Car5
+Car2
+2021.05.31-06:09:46.909[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[b7645641be] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: b7645641bed41b8e39ac2fade44a516f4b631e3869784151b748a28f5f6bac47
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: b7645641bed41b8e39ac2fade44a516f4b631e3869784151b748a28f5f6bac47
+{ status:
+   { id:
+      'b7645641bed41b8e39ac2fade44a516f4b631e3869784151b748a28f5f6bac47',
+     status: 'failed',
+     time_create: 1622455786902,
+     time_final: 1622455786909,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction b7645641bed41b8e39ac2fade44a516f4b631e3869784151b748a28f5f6bac47: 7
+Car37
+Car2
+2021.05.31-06:09:46.964[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[f2a87c613d] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: f2a87c613d7fd470f3e36ff2732a004d482d7d5f6a7b38635d0d8cb3773db71b
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: f2a87c613d7fd470f3e36ff2732a004d482d7d5f6a7b38635d0d8cb3773db71b
+{ status:
+   { id:
+      'f2a87c613d7fd470f3e36ff2732a004d482d7d5f6a7b38635d0d8cb3773db71b',
+     status: 'failed',
+     time_create: 1622455786940,
+     time_final: 1622455786964,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction f2a87c613d7fd470f3e36ff2732a004d482d7d5f6a7b38635d0d8cb3773db71b: 24
+Car12
+Car2
+2021.05.31-06:09:46.995[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[61fabb2f5b] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 61fabb2f5b8aebd69a57f42126f94c3b39fea8e6c56cb7ffe2e53f362be33d84
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 61fabb2f5b8aebd69a57f42126f94c3b39fea8e6c56cb7ffe2e53f362be33d84
+{ status:
+   { id:
+      '61fabb2f5b8aebd69a57f42126f94c3b39fea8e6c56cb7ffe2e53f362be33d84',
+     status: 'failed',
+     time_create: 1622455786968,
+     time_final: 1622455786995,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 61fabb2f5b8aebd69a57f42126f94c3b39fea8e6c56cb7ffe2e53f362be33d84: 27
+Car1
+2021.05.31-06:09:47.012[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[062a3149ce] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 062a3149ce8e43ba7593c8e10f9e9f625656c7deb1d6e14d65b0953ec4fbab97
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 062a3149ce8e43ba7593c8e10f9e9f625656c7deb1d6e14d65b0953ec4fbab97
+{ status:
+   { id:
+      '062a3149ce8e43ba7593c8e10f9e9f625656c7deb1d6e14d65b0953ec4fbab97',
+     status: 'failed',
+     time_create: 1622455786979,
+     time_final: 1622455787012,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 062a3149ce8e43ba7593c8e10f9e9f625656c7deb1d6e14d65b0953ec4fbab97: 33
+2021.05.31-06:09:47.020[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[74e08d726b] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 74e08d726b4bef01b651ae7cf572fc44f747f65336c8c1cd689babec5381aea8
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 74e08d726b4bef01b651ae7cf572fc44f747f65336c8c1cd689babec5381aea8
+{ status:
+   { id:
+      '74e08d726b4bef01b651ae7cf572fc44f747f65336c8c1cd689babec5381aea8',
+     status: 'failed',
+     time_create: 1622455786999,
+     time_final: 1622455787020,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 74e08d726b4bef01b651ae7cf572fc44f747f65336c8c1cd689babec5381aea8: 21
+Car1
+Car27
+2021.05.31-06:09:47.053[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[bb5c86bee5] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: bb5c86bee54b01e1795050435ccc936d5cb2468502ef661a803076ddab0ed6fd
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: bb5c86bee54b01e1795050435ccc936d5cb2468502ef661a803076ddab0ed6fd
+{ status:
+   { id:
+      'bb5c86bee54b01e1795050435ccc936d5cb2468502ef661a803076ddab0ed6fd',
+     status: 'failed',
+     time_create: 1622455787022,
+     time_final: 1622455787053,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction bb5c86bee54b01e1795050435ccc936d5cb2468502ef661a803076ddab0ed6fd: 31
+Car7
+2021.05.31-06:09:47.086[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[361de2ade1] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 361de2ade14a098630fae8be63f2f0a71962b8b0527166a0edf9ca9c94afe309
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 361de2ade14a098630fae8be63f2f0a71962b8b0527166a0edf9ca9c94afe309
+{ status:
+   { id:
+      '361de2ade14a098630fae8be63f2f0a71962b8b0527166a0edf9ca9c94afe309',
+     status: 'failed',
+     time_create: 1622455787061,
+     time_final: 1622455787086,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 361de2ade14a098630fae8be63f2f0a71962b8b0527166a0edf9ca9c94afe309: 25
+Car67
+Car8
+2021.05.31-06:09:47.108[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[d7984c181b] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: d7984c181bec8c570382b40a657bf2e00631bc07067bd9b0fa47010065ef381e
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: d7984c181bec8c570382b40a657bf2e00631bc07067bd9b0fa47010065ef381e
+{ status:
+   { id:
+      'd7984c181bec8c570382b40a657bf2e00631bc07067bd9b0fa47010065ef381e',
+     status: 'failed',
+     time_create: 1622455787101,
+     time_final: 1622455787108,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction d7984c181bec8c570382b40a657bf2e00631bc07067bd9b0fa47010065ef381e: 7
+Car55
+Car61
+Car7
+2021.05.31-06:09:47.166[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[10a9ebf6cb] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 10a9ebf6cb38058d0dfd310919cb8471fbafd775dad2f6edb02bb7bf7f75985b
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 10a9ebf6cb38058d0dfd310919cb8471fbafd775dad2f6edb02bb7bf7f75985b
+{ status:
+   { id:
+      '10a9ebf6cb38058d0dfd310919cb8471fbafd775dad2f6edb02bb7bf7f75985b',
+     status: 'failed',
+     time_create: 1622455787158,
+     time_final: 1622455787166,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 10a9ebf6cb38058d0dfd310919cb8471fbafd775dad2f6edb02bb7bf7f75985b: 8
+Car5
+2021.05.31-06:09:47.189[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[f822b26b69] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: f822b26b6986557236efd5e4932308b3dd21a91e9c65410fa911f59f32ab4a8a
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: f822b26b6986557236efd5e4932308b3dd21a91e9c65410fa911f59f32ab4a8a
+{ status:
+   { id:
+      'f822b26b6986557236efd5e4932308b3dd21a91e9c65410fa911f59f32ab4a8a',
+     status: 'failed',
+     time_create: 1622455787178,
+     time_final: 1622455787189,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction f822b26b6986557236efd5e4932308b3dd21a91e9c65410fa911f59f32ab4a8a: 11
+Car3
+2021.05.31-06:09:47.210[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[1a7dca7d7a] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 1a7dca7d7a585c2db3994dba8b1d368b51e082adacc52a33a76e20635734fe46
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 1a7dca7d7a585c2db3994dba8b1d368b51e082adacc52a33a76e20635734fe46
+{ status:
+   { id:
+      '1a7dca7d7a585c2db3994dba8b1d368b51e082adacc52a33a76e20635734fe46',
+     status: 'failed',
+     time_create: 1622455787199,
+     time_final: 1622455787210,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 1a7dca7d7a585c2db3994dba8b1d368b51e082adacc52a33a76e20635734fe46: 11
+Car2
+2021.05.31-06:09:47.228[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[24f8220989] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 24f8220989ab264cc6ce09b6be126dda3c02a623ed6b3e5f3288cdf850e0d905
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 24f8220989ab264cc6ce09b6be126dda3c02a623ed6b3e5f3288cdf850e0d905
+{ status:
+   { id:
+      '24f8220989ab264cc6ce09b6be126dda3c02a623ed6b3e5f3288cdf850e0d905',
+     status: 'failed',
+     time_create: 1622455787220,
+     time_final: 1622455787228,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 24f8220989ab264cc6ce09b6be126dda3c02a623ed6b3e5f3288cdf850e0d905: 8
+Car1
+2021.05.31-06:09:47.248[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[64efafeb4d] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 64efafeb4d9410f13b441b5e2ea9f49c7151062a3f3dfc4072204cea4227393c
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 64efafeb4d9410f13b441b5e2ea9f49c7151062a3f3dfc4072204cea4227393c
+{ status:
+   { id:
+      '64efafeb4d9410f13b441b5e2ea9f49c7151062a3f3dfc4072204cea4227393c',
+     status: 'failed',
+     time_create: 1622455787239,
+     time_final: 1622455787248,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 64efafeb4d9410f13b441b5e2ea9f49c7151062a3f3dfc4072204cea4227393c: 9
+Car1
+2021.05.31-06:09:47.269[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[b9b818852b] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: b9b818852b4cbe05b8c01782aa6b9141691e9614acaede2502e8cc8190d9ea12
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: b9b818852b4cbe05b8c01782aa6b9141691e9614acaede2502e8cc8190d9ea12
+{ status:
+   { id:
+      'b9b818852b4cbe05b8c01782aa6b9141691e9614acaede2502e8cc8190d9ea12',
+     status: 'failed',
+     time_create: 1622455787259,
+     time_final: 1622455787269,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction b9b818852b4cbe05b8c01782aa6b9141691e9614acaede2502e8cc8190d9ea12: 10
+Car7
+2021.05.31-06:09:47.287[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[ae5c08349f] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: ae5c08349f0bab0b1d7fb385621f24059e2b88564f6756d9c466ad5ed550aa75
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: ae5c08349f0bab0b1d7fb385621f24059e2b88564f6756d9c466ad5ed550aa75
+{ status:
+   { id:
+      'ae5c08349f0bab0b1d7fb385621f24059e2b88564f6756d9c466ad5ed550aa75',
+     status: 'failed',
+     time_create: 1622455787277,
+     time_final: 1622455787287,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction ae5c08349f0bab0b1d7fb385621f24059e2b88564f6756d9c466ad5ed550aa75: 10
+Car1
+2021.05.31-06:09:47.309[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[db541c650a] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: db541c650aecb379d19cdd93dad1908b1c062de24dd0c09cf8aa419f11646929
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: db541c650aecb379d19cdd93dad1908b1c062de24dd0c09cf8aa419f11646929
+{ status:
+   { id:
+      'db541c650aecb379d19cdd93dad1908b1c062de24dd0c09cf8aa419f11646929',
+     status: 'failed',
+     time_create: 1622455787298,
+     time_final: 1622455787309,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction db541c650aecb379d19cdd93dad1908b1c062de24dd0c09cf8aa419f11646929: 11
+Car5
+2021.05.31-06:09:47.328[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[51e9e12c54] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 51e9e12c54bda8e98899b59aa6aaf4478e0cbaae4cbf5a377c6c2cde4024c9e0
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 51e9e12c54bda8e98899b59aa6aaf4478e0cbaae4cbf5a377c6c2cde4024c9e0
+{ status:
+   { id:
+      '51e9e12c54bda8e98899b59aa6aaf4478e0cbaae4cbf5a377c6c2cde4024c9e0',
+     status: 'failed',
+     time_create: 1622455787320,
+     time_final: 1622455787328,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 51e9e12c54bda8e98899b59aa6aaf4478e0cbaae4cbf5a377c6c2cde4024c9e0: 8
+Car70
+Car5
+2021.05.31-06:09:47.367[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[2c670801e6] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 2c670801e635d00461d5ecca7a5c0596d5bd5d829a18c2161587902796613f59
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 2c670801e635d00461d5ecca7a5c0596d5bd5d829a18c2161587902796613f59
+{ status:
+   { id:
+      '2c670801e635d00461d5ecca7a5c0596d5bd5d829a18c2161587902796613f59',
+     status: 'failed',
+     time_create: 1622455787359,
+     time_final: 1622455787367,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 2c670801e635d00461d5ecca7a5c0596d5bd5d829a18c2161587902796613f59: 8
+Car1
+2021.05.31-06:09:47.390[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[f153da3481] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: f153da3481fa75dab4263e5473d479130a353c2fef6da72a7001490711eb2e4d
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: f153da3481fa75dab4263e5473d479130a353c2fef6da72a7001490711eb2e4d
+{ status:
+   { id:
+      'f153da3481fa75dab4263e5473d479130a353c2fef6da72a7001490711eb2e4d',
+     status: 'failed',
+     time_create: 1622455787379,
+     time_final: 1622455787390,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction f153da3481fa75dab4263e5473d479130a353c2fef6da72a7001490711eb2e4d: 11
+Car2
+2021.05.31-06:09:47.407[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[874415a8fb] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 874415a8fb73d8d1fcb88c0011812fdc1a84a9dfa25c5b214d28d523bf9b6b90
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 874415a8fb73d8d1fcb88c0011812fdc1a84a9dfa25c5b214d28d523bf9b6b90
+{ status:
+   { id:
+      '874415a8fb73d8d1fcb88c0011812fdc1a84a9dfa25c5b214d28d523bf9b6b90',
+     status: 'failed',
+     time_create: 1622455787398,
+     time_final: 1622455787407,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 874415a8fb73d8d1fcb88c0011812fdc1a84a9dfa25c5b214d28d523bf9b6b90: 9
+Car8
+2021.05.31-06:09:47.427[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[0c238f9f43] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 0c238f9f438d1c7b2dd652641380a2cb06a40aee59dc1225df0f4f0b4f9f9f7c
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 0c238f9f438d1c7b2dd652641380a2cb06a40aee59dc1225df0f4f0b4f9f9f7c
+{ status:
+   { id:
+      '0c238f9f438d1c7b2dd652641380a2cb06a40aee59dc1225df0f4f0b4f9f9f7c',
+     status: 'failed',
+     time_create: 1622455787419,
+     time_final: 1622455787427,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 0c238f9f438d1c7b2dd652641380a2cb06a40aee59dc1225df0f4f0b4f9f9f7c: 8
+Car20
+Car1
+2021.05.31-06:09:47.469[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[15e9661fda] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 15e9661fdab0507e580f5c85cb8c67c77846874d73e422c8f112eef4af4172a2
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 15e9661fdab0507e580f5c85cb8c67c77846874d73e422c8f112eef4af4172a2
+{ status:
+   { id:
+      '15e9661fdab0507e580f5c85cb8c67c77846874d73e422c8f112eef4af4172a2',
+     status: 'failed',
+     time_create: 1622455787459,
+     time_final: 1622455787469,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 15e9661fdab0507e580f5c85cb8c67c77846874d73e422c8f112eef4af4172a2: 10
+Car94
+Car51
+Car2
+2021.05.31-06:09:47.528[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[7336d072fa] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 7336d072fae5627886709f0c3b84c01217e309191cd3c3241b1c8df64b54b6f7
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 7336d072fae5627886709f0c3b84c01217e309191cd3c3241b1c8df64b54b6f7
+{ status:
+   { id:
+      '7336d072fae5627886709f0c3b84c01217e309191cd3c3241b1c8df64b54b6f7',
+     status: 'failed',
+     time_create: 1622455787518,
+     time_final: 1622455787528,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 7336d072fae5627886709f0c3b84c01217e309191cd3c3241b1c8df64b54b6f7: 10
+Car3
+2021.05.31-06:09:47.547[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[ad74bfe3c1] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: ad74bfe3c17dcfcb57dd5e7d82e0e8bf9de20c1964117766e6ad67f41999f459
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: ad74bfe3c17dcfcb57dd5e7d82e0e8bf9de20c1964117766e6ad67f41999f459
+{ status:
+   { id:
+      'ad74bfe3c17dcfcb57dd5e7d82e0e8bf9de20c1964117766e6ad67f41999f459',
+     status: 'failed',
+     time_create: 1622455787538,
+     time_final: 1622455787547,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction ad74bfe3c17dcfcb57dd5e7d82e0e8bf9de20c1964117766e6ad67f41999f459: 9
+Car9
+2021.05.31-06:09:47.567[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[c475920bad] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: c475920bad47be573b81437011eeea79e488009fdfb1c2e3e9b9ca9faad0a68d
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: c475920bad47be573b81437011eeea79e488009fdfb1c2e3e9b9ca9faad0a68d
+{ status:
+   { id:
+      'c475920bad47be573b81437011eeea79e488009fdfb1c2e3e9b9ca9faad0a68d',
+     status: 'failed',
+     time_create: 1622455787558,
+     time_final: 1622455787567,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction c475920bad47be573b81437011eeea79e488009fdfb1c2e3e9b9ca9faad0a68d: 9
+Car1
+2021.05.31-06:09:47.589[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[e44bb0b52a] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: e44bb0b52a6b15caa1543f62e4ab38f4e7d7f22cdeddf8c441212787b534fb41
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: e44bb0b52a6b15caa1543f62e4ab38f4e7d7f22cdeddf8c441212787b534fb41
+{ status:
+   { id:
+      'e44bb0b52a6b15caa1543f62e4ab38f4e7d7f22cdeddf8c441212787b534fb41',
+     status: 'failed',
+     time_create: 1622455787579,
+     time_final: 1622455787589,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction e44bb0b52a6b15caa1543f62e4ab38f4e7d7f22cdeddf8c441212787b534fb41: 10
+Car1
+2021.05.31-06:09:47.608[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[494a451c8a] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 494a451c8abe798e909e4aa7e883d1575584a40d1e99deb28b07c04effe416cc
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 494a451c8abe798e909e4aa7e883d1575584a40d1e99deb28b07c04effe416cc
+{ status:
+   { id:
+      '494a451c8abe798e909e4aa7e883d1575584a40d1e99deb28b07c04effe416cc',
+     status: 'failed',
+     time_create: 1622455787599,
+     time_final: 1622455787608,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 494a451c8abe798e909e4aa7e883d1575584a40d1e99deb28b07c04effe416cc: 9
+Car2
+2021.05.31-06:09:47.627[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[b9fccea7f1] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: b9fccea7f16b67fd0fb2e5045abf4f5e501d0e4a2fdb23b0e8ecc8f40f63feb7
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: b9fccea7f16b67fd0fb2e5045abf4f5e501d0e4a2fdb23b0e8ecc8f40f63feb7
+{ status:
+   { id:
+      'b9fccea7f16b67fd0fb2e5045abf4f5e501d0e4a2fdb23b0e8ecc8f40f63feb7',
+     status: 'failed',
+     time_create: 1622455787619,
+     time_final: 1622455787627,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction b9fccea7f16b67fd0fb2e5045abf4f5e501d0e4a2fdb23b0e8ecc8f40f63feb7: 8
+Car92
+2021.05.31-06:09:47.647[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[428106e143] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 428106e14353511405861963f00cf17bbd5cb3908663fa263776d956f14a8927
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 428106e14353511405861963f00cf17bbd5cb3908663fa263776d956f14a8927
+{ status:
+   { id:
+      '428106e14353511405861963f00cf17bbd5cb3908663fa263776d956f14a8927',
+     status: 'failed',
+     time_create: 1622455787639,
+     time_final: 1622455787647,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 428106e14353511405861963f00cf17bbd5cb3908663fa263776d956f14a8927: 8
+Car1
+2021.05.31-06:09:47.668[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[6ca64a81cc] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 6ca64a81cc7a257d0992fde028b7f7ba4e442d843ea94ee81dfdef825d56c473
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 6ca64a81cc7a257d0992fde028b7f7ba4e442d843ea94ee81dfdef825d56c473
+{ status:
+   { id:
+      '6ca64a81cc7a257d0992fde028b7f7ba4e442d843ea94ee81dfdef825d56c473',
+     status: 'failed',
+     time_create: 1622455787659,
+     time_final: 1622455787668,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 6ca64a81cc7a257d0992fde028b7f7ba4e442d843ea94ee81dfdef825d56c473: 9
+Car7
+2021.05.31-06:09:47.688[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[30880a21f6] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 30880a21f63b38d07716e504600c763526992020b5d10776b4a6cf50692e5488
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 30880a21f63b38d07716e504600c763526992020b5d10776b4a6cf50692e5488
+{ status:
+   { id:
+      '30880a21f63b38d07716e504600c763526992020b5d10776b4a6cf50692e5488',
+     status: 'failed',
+     time_create: 1622455787678,
+     time_final: 1622455787688,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 30880a21f63b38d07716e504600c763526992020b5d10776b4a6cf50692e5488: 10
+Car24
+2021.05.31-06:09:47.709[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[d589a25a40] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: d589a25a4004e11b810e76018c193758431e2b455501c6a5f27417e47c6c0af6
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: d589a25a4004e11b810e76018c193758431e2b455501c6a5f27417e47c6c0af6
+{ status:
+   { id:
+      'd589a25a4004e11b810e76018c193758431e2b455501c6a5f27417e47c6c0af6',
+     status: 'failed',
+     time_create: 1622455787699,
+     time_final: 1622455787709,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction d589a25a4004e11b810e76018c193758431e2b455501c6a5f27417e47c6c0af6: 10
+Car2
+2021.05.31-06:09:47.727[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[b4264ddd21] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: b4264ddd2121897e8247f67c460c30aec4db1c23eb67b3ca1b62af0e6c87afdd
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: b4264ddd2121897e8247f67c460c30aec4db1c23eb67b3ca1b62af0e6c87afdd
+{ status:
+   { id:
+      'b4264ddd2121897e8247f67c460c30aec4db1c23eb67b3ca1b62af0e6c87afdd',
+     status: 'failed',
+     time_create: 1622455787719,
+     time_final: 1622455787727,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction b4264ddd2121897e8247f67c460c30aec4db1c23eb67b3ca1b62af0e6c87afdd: 8
+Car1
+2021.05.31-06:09:47.747[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[db2898c383] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: db2898c383fb25c6fa4accf97053ea7743262e36284e7762ad902cabb809f903
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: db2898c383fb25c6fa4accf97053ea7743262e36284e7762ad902cabb809f903
+{ status:
+   { id:
+      'db2898c383fb25c6fa4accf97053ea7743262e36284e7762ad902cabb809f903',
+     status: 'failed',
+     time_create: 1622455787739,
+     time_final: 1622455787747,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction db2898c383fb25c6fa4accf97053ea7743262e36284e7762ad902cabb809f903: 8
+Car2
+2021.05.31-06:09:47.770[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[6587db7d26] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 6587db7d2676175610725a50ab37c809785a470db44880326e6f1946ca8a33ad
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 6587db7d2676175610725a50ab37c809785a470db44880326e6f1946ca8a33ad
+{ status:
+   { id:
+      '6587db7d2676175610725a50ab37c809785a470db44880326e6f1946ca8a33ad',
+     status: 'failed',
+     time_create: 1622455787758,
+     time_final: 1622455787770,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 6587db7d2676175610725a50ab37c809785a470db44880326e6f1946ca8a33ad: 12
+Car76
+Car10
+Car2
+2021.05.31-06:09:47.828[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[c47ded96fd] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: c47ded96fdc4202d543381c4d602a1e44e9762c1729dd405192c8cf4d75fc976
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: c47ded96fdc4202d543381c4d602a1e44e9762c1729dd405192c8cf4d75fc976
+{ status:
+   { id:
+      'c47ded96fdc4202d543381c4d602a1e44e9762c1729dd405192c8cf4d75fc976',
+     status: 'failed',
+     time_create: 1622455787819,
+     time_final: 1622455787828,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction c47ded96fdc4202d543381c4d602a1e44e9762c1729dd405192c8cf4d75fc976: 9
+Car3
+2021.05.31-06:09:47.845[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[02b7bd92a4] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 02b7bd92a43d0611f49d1de0c5e4a64ad1cef556c3e4bbf45282748fdf34fb41
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 02b7bd92a43d0611f49d1de0c5e4a64ad1cef556c3e4bbf45282748fdf34fb41
+{ status:
+   { id:
+      '02b7bd92a43d0611f49d1de0c5e4a64ad1cef556c3e4bbf45282748fdf34fb41',
+     status: 'failed',
+     time_create: 1622455787839,
+     time_final: 1622455787845,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 02b7bd92a43d0611f49d1de0c5e4a64ad1cef556c3e4bbf45282748fdf34fb41: 6
+Car3
+2021.05.31-06:09:47.867[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[307a745044] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 307a74504473792afbb261df03f577f6a50c93554747f6fef57e1cfd0d3e7766
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 307a74504473792afbb261df03f577f6a50c93554747f6fef57e1cfd0d3e7766
+{ status:
+   { id:
+      '307a74504473792afbb261df03f577f6a50c93554747f6fef57e1cfd0d3e7766',
+     status: 'failed',
+     time_create: 1622455787859,
+     time_final: 1622455787867,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 307a74504473792afbb261df03f577f6a50c93554747f6fef57e1cfd0d3e7766: 8
+Car1
+2021.05.31-06:09:47.887[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[5a04d78ef3] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 5a04d78ef3cc9643146d0c153b6451a08fe20c273b780630079db3ee22f132ed
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 5a04d78ef3cc9643146d0c153b6451a08fe20c273b780630079db3ee22f132ed
+{ status:
+   { id:
+      '5a04d78ef3cc9643146d0c153b6451a08fe20c273b780630079db3ee22f132ed',
+     status: 'failed',
+     time_create: 1622455787879,
+     time_final: 1622455787886,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 5a04d78ef3cc9643146d0c153b6451a08fe20c273b780630079db3ee22f132ed: 7
+Car8
+2021.05.31-06:09:47.906[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[65104bd170] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 65104bd17099212278661d39ccb1128d024e14b7b36bdb36ad86ddc8c8430ebb
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 65104bd17099212278661d39ccb1128d024e14b7b36bdb36ad86ddc8c8430ebb
+{ status:
+   { id:
+      '65104bd17099212278661d39ccb1128d024e14b7b36bdb36ad86ddc8c8430ebb',
+     status: 'failed',
+     time_create: 1622455787899,
+     time_final: 1622455787906,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 65104bd17099212278661d39ccb1128d024e14b7b36bdb36ad86ddc8c8430ebb: 7
+Car1
+2021.05.31-06:09:47.926[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[2b48ca6a2c] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 2b48ca6a2c286861ce1cab2524f103a529f510f6836b443d8654a93b0f2f9276
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 2b48ca6a2c286861ce1cab2524f103a529f510f6836b443d8654a93b0f2f9276
+{ status:
+   { id:
+      '2b48ca6a2c286861ce1cab2524f103a529f510f6836b443d8654a93b0f2f9276',
+     status: 'failed',
+     time_create: 1622455787918,
+     time_final: 1622455787926,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 2b48ca6a2c286861ce1cab2524f103a529f510f6836b443d8654a93b0f2f9276: 8
+Car66
+Car25
+Car7
+2021.05.31-06:09:47.992[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[f8ded5f7ce] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: f8ded5f7ce91420d624eaf57efcbe28b160a16d69a3a60a9e703d2a5229f2eb2
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: f8ded5f7ce91420d624eaf57efcbe28b160a16d69a3a60a9e703d2a5229f2eb2
+{ status:
+   { id:
+      'f8ded5f7ce91420d624eaf57efcbe28b160a16d69a3a60a9e703d2a5229f2eb2',
+     status: 'failed',
+     time_create: 1622455787982,
+     time_final: 1622455787992,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction f8ded5f7ce91420d624eaf57efcbe28b160a16d69a3a60a9e703d2a5229f2eb2: 10
+Car11
+Car1
+2021.05.31-06:09:48.027[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[e25482de7b] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: e25482de7b3b84c2c9637b9f65a50534251ba7e364f441670b530713fd492bf2
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: e25482de7b3b84c2c9637b9f65a50534251ba7e364f441670b530713fd492bf2
+{ status:
+   { id:
+      'e25482de7b3b84c2c9637b9f65a50534251ba7e364f441670b530713fd492bf2',
+     status: 'failed',
+     time_create: 1622455788019,
+     time_final: 1622455788027,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction e25482de7b3b84c2c9637b9f65a50534251ba7e364f441670b530713fd492bf2: 8
+Car1
+2021.05.31-06:09:48.046[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[4ca0095e65] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 4ca0095e6582435a7f22a8a02737a8f23677b2bfb9a94f8473f8a8716e89f040
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 4ca0095e6582435a7f22a8a02737a8f23677b2bfb9a94f8473f8a8716e89f040
+{ status:
+   { id:
+      '4ca0095e6582435a7f22a8a02737a8f23677b2bfb9a94f8473f8a8716e89f040',
+     status: 'failed',
+     time_create: 1622455788038,
+     time_final: 1622455788045,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 4ca0095e6582435a7f22a8a02737a8f23677b2bfb9a94f8473f8a8716e89f040: 7
+Car4
+2021.05.31-06:09:48.075[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[9039e46157] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 9039e4615732c4ac2e51bccce096f4e9b6f847888ad0266f496b143c91b6f62e
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 9039e4615732c4ac2e51bccce096f4e9b6f847888ad0266f496b143c91b6f62e
+{ status:
+   { id:
+      '9039e4615732c4ac2e51bccce096f4e9b6f847888ad0266f496b143c91b6f62e',
+     status: 'failed',
+     time_create: 1622455788060,
+     time_final: 1622455788075,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 9039e4615732c4ac2e51bccce096f4e9b6f847888ad0266f496b143c91b6f62e: 15
+Car1
+2021.05.31-06:09:48.086[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[8ba0b850ee] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: 8ba0b850ee3aded6867f9d57f326e39e56f63b96630b421391ff091b64e35019
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: 8ba0b850ee3aded6867f9d57f326e39e56f63b96630b421391ff091b64e35019
+{ status:
+   { id:
+      '8ba0b850ee3aded6867f9d57f326e39e56f63b96630b421391ff091b64e35019',
+     status: 'failed',
+     time_create: 1622455788078,
+     time_final: 1622455788086,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 8ba0b850ee3aded6867f9d57f326e39e56f63b96630b421391ff091b64e35019: 8
+Car7
+2021.05.31-06:09:48.114[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[bbaa06458d] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: bbaa06458db9ba3b92b1e33eb28c1dd9f3eccefa6770d5eb35e93652bc9341c7
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: bbaa06458db9ba3b92b1e33eb28c1dd9f3eccefa6770d5eb35e93652bc9341c7
+{ status:
+   { id:
+      'bbaa06458db9ba3b92b1e33eb28c1dd9f3eccefa6770d5eb35e93652bc9341c7',
+     status: 'failed',
+     time_create: 1622455788099,
+     time_final: 1622455788114,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction bbaa06458db9ba3b92b1e33eb28c1dd9f3eccefa6770d5eb35e93652bc9341c7: 15
+Car2
+2021.05.31-06:09:48.129[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[bb7a8d34c0] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: bb7a8d34c055802a36212516dccb48dd2b34ec949274fc7b9ac67bdaeebc1c62
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: bb7a8d34c055802a36212516dccb48dd2b34ec949274fc7b9ac67bdaeebc1c62
+{ status:
+   { id:
+      'bb7a8d34c055802a36212516dccb48dd2b34ec949274fc7b9ac67bdaeebc1c62',
+     status: 'failed',
+     time_create: 1622455788119,
+     time_final: 1622455788129,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction bb7a8d34c055802a36212516dccb48dd2b34ec949274fc7b9ac67bdaeebc1c62: 10
+Car1
+2021.05.31-06:09:48.147[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[c0062b1681] life-cycle errors:
+	- Proposal response error by peer0.org1.example.com: error in simulation: error while doing EMVCC validation: Txid: c0062b16814ece1e6b029e0c610a0615cdb74a857e5741398d3aceabeb58d540
+	- Proposal response error by peer0.org2.example.com: error in simulation: error while doing EMVCC validation: Txid: c0062b16814ece1e6b029e0c610a0615cdb74a857e5741398d3aceabeb58d540
+{ status:
+   { id:
+      'c0062b16814ece1e6b029e0c610a0615cdb74a857e5741398d3aceabeb58d540',
+     status: 'failed',
+     time_create: 1622455788139,
+     time_final: 1622455788147,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction c0062b16814ece1e6b029e0c610a0615cdb74a857e5741398d3aceabeb58d540: 8
+undefined
+2021.05.31-06:09:48.158[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[735cabd126] life-cycle errors:
+	- The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type undefined
+{ status:
+   { id:
+      '735cabd12650804d23cdb13db93d618934b9aa9056cecbfce021a8c8de9551ff',
+     status: 'failed',
+     time_create: 1622455788158,
+     time_final: 1622455788158,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 735cabd12650804d23cdb13db93d618934b9aa9056cecbfce021a8c8de9551ff: 0
+undefined
+2021.05.31-06:09:48.178[31m error[39m [caliper] [connectors/v1/fabric] 	Transaction[72c7349349] life-cycle errors:
+	- The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type undefined
+{ status:
+   { id:
+      '72c7349349b45ee4b258fe7be8760ab90c7a714bc3af0fd51258d1ed2864a1c6',
+     status: 'failed',
+     time_create: 1622455788178,
+     time_final: 1622455788178,
+     result: null,
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Time to dectet conflict for transaction 72c7349349b45ee4b258fe7be8760ab90c7a714bc3af0fd51258d1ed2864a1c6: 0
+{ status:
+   { id:
+      '785a279c432806d76a8f99c22b6b4ef4327e635ad9dcd5fb6359fb2e98926308',
+     status: 'success',
+     time_create: 1622455786218,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'b9d6a16893e12663e0cda98f5ef15886e1b71a2853e718b47d3ebcda43715dd0',
+     status: 'success',
+     time_create: 1622455786238,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'c5fde88afc9250783e93dbd2075a7d21b5eaf1675b538ee169fb0fb3bb7eafe6',
+     status: 'success',
+     time_create: 1622455786259,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '71f3298adc1a3583c4de736dc798befe7ad600bec76bc13a33d45b2fd5a40175',
+     status: 'success',
+     time_create: 1622455786298,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '5fd9bfaf8e8d61a99b3faeb6e7fe0b78a048e13d2e6264c104e3ec31a4b0f529',
+     status: 'success',
+     time_create: 1622455786319,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '4b3b0d795113441e9a97d6df418ad14f119e145b59488903dee565ac3cc9d4fb',
+     status: 'success',
+     time_create: 1622455786339,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '6e8b6576129c84c092b15c12769153f7a4079cf7b3ec6168f80ebdc6a7d6b111',
+     status: 'success',
+     time_create: 1622455786359,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '87b56aae05485e54d48fca598d52a4c136d92592fe0f2208a96683f95c27f098',
+     status: 'success',
+     time_create: 1622455786379,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'b798ac9cbf77ef71590bc63719bdbc8d3ea8c98e18904249a60d657c389400e4',
+     status: 'success',
+     time_create: 1622455786438,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '93f0f61873f472ca22384b4e0cf81ae45122dd39d84b934c348adf6810f33926',
+     status: 'success',
+     time_create: 1622455786458,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'd4c1e7f0ba035fe4146f49f0e2e25b980c23372b03fe6d837de546102e64ea38',
+     status: 'success',
+     time_create: 1622455786479,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '608539840f5b8b568bbc3911e93d9c4d53e646196a744fdee648d61c41334a60',
+     status: 'success',
+     time_create: 1622455786519,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'b7d8c4a741b38d8006001e79162611a350ab53471a36de9dff45990f926bc26e',
+     status: 'success',
+     time_create: 1622455786539,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'a56e8f7660bf2683d1e8f3bcac4cd163e351d8dc9df0c0c10079df30460ab5bb',
+     status: 'success',
+     time_create: 1622455786619,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '56e08af51a8e45cccec0acd87fcec6bfd3b2c5f0a4b3d020d187e933ab577475',
+     status: 'success',
+     time_create: 1622455786639,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '0b087f923ea0d58642db038dbff1ed9a05c1e2e045012a25fde6db405e0840fb',
+     status: 'success',
+     time_create: 1622455786658,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'dab242b6ad088345c081f5922e003da5d93351e7d31eb28f87a855cfaa61ba07',
+     status: 'success',
+     time_create: 1622455786679,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '77e7fc37db52bd5f922863e1547d98eaa84f32800264e3ddb1846a4d29a6e56c',
+     status: 'success',
+     time_create: 1622455786697,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'a864ae5b83ad885e5e4a5275681e53c0851046491c4d38bc5b873a96304c4d1b',
+     status: 'success',
+     time_create: 1622455786719,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '975c44d7f2c610213479ecccdf63b78d7e8cc935bd7540eac5c6ca8580507d53',
+     status: 'success',
+     time_create: 1622455786738,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '773ce83d71c31930b7191d06db876835cc053cbeab1d1468a56ad2c230c6c2c2',
+     status: 'success',
+     time_create: 1622455786758,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'e1c8e866368e95f7c45d524ead776145c0caf402711cad86258e86d4746d9343',
+     status: 'success',
+     time_create: 1622455786800,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '47c71b738f06b193733eb99423d840822d6ea7c79e129646a092611982513f34',
+     status: 'success',
+     time_create: 1622455786859,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '509dec62590059290cd8f7e90c5ccd52a27b013369618707bcf5ebcb026fbdb0',
+     status: 'success',
+     time_create: 1622455786878,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '8bb0bc3ff811e7a31dc9a1c215db2c93c6a168f9a133b6ac32f93abb2392d684',
+     status: 'success',
+     time_create: 1622455786919,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '3936ab3ffc42bae4906892f80693dbc705dfe10bdb1068f2361700cd38000da8',
+     status: 'success',
+     time_create: 1622455787039,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'c37abae7cd36350531dedabdbc3127fe13773ba7c8e9021d69bbf18a3fcef585',
+     status: 'success',
+     time_create: 1622455787087,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '8cf19f6c3830ba8160891f3a79dad93a1520a9148712a465e0861dc36284d8a4',
+     status: 'success',
+     time_create: 1622455787118,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '8dd5b1f9520627a4a484cb54d9d49a33e91a225b24f96582138b03ea944ad0ab',
+     status: 'success',
+     time_create: 1622455787139,
+     time_final: 1622455788310,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '984277e3798f512496ad30ff64a5d7ab31f383d9eac5ba7967d8d0df309445d4',
+     status: 'success',
+     time_create: 1622455787338,
+     time_final: 1622455788311,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'b63afc894c1331a5e1a5a7ed63377b10894e8877c532005ad45995972141c316',
+     status: 'success',
+     time_create: 1622455787438,
+     time_final: 1622455788311,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '17501f73538ca0abeac55e5d30741ae6b42b8bd75fcde03d72af6017c81f8e11',
+     status: 'success',
+     time_create: 1622455787478,
+     time_final: 1622455788311,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'b062ebdb7711f907b891ff32c9232809a08947e0af3edcac31d3c9359d0ee374',
+     status: 'success',
+     time_create: 1622455787499,
+     time_final: 1622455788311,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'e39b9102349d39ab778c435768a53a17d260928837f7d5c10be7bb7cfa75fdad',
+     status: 'success',
+     time_create: 1622455787779,
+     time_final: 1622455788311,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'bb2101f89fa3fa963c12144c060076e646c7797874d2f879170b08e8f6d0c706',
+     status: 'success',
+     time_create: 1622455787800,
+     time_final: 1622455788311,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '499863daaf25fa817f73f7d2b2a5e9d4a4ec700847945632bb05c33855b089ec',
+     status: 'success',
+     time_create: 1622455787939,
+     time_final: 1622455788311,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      'c2cf4cc171c73ba4368a1817a50e2d26a16650ea83229f8857a2aff9a86e5302',
+     status: 'success',
+     time_create: 1622455787959,
+     time_final: 1622455788311,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+{ status:
+   { id:
+      '42717dd058c32052bfbfa02fcc8b3aca58426808e8280fff958861a9018164c3',
+     status: 'success',
+     time_create: 1622455787998,
+     time_final: 1622455788311,
+     result: { type: 'Buffer', data: [] },
+     verified: true,
+     flags: 0,
+     error_messages: [],
+     custom_data: {} } }
+Number of rejected Tx with EMVCC error 62
+Number of rejected Tx with MVCC error 0
+EMVCC Avg Time to detect conflict: 10.306451612903226
+MVCC Avg Time to detect conflict:  NaN
+success Avg Time : 1430.8684210526317
+2021.05.31-06:09:49.383[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#1
+2021.05.31-06:09:54.387[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2021.05.31-06:09:54.390[32m info [39m [caliper] [report-builder] 	### Test result ###
+2021.05.31-06:09:54.396[32m info [39m [caliper] [report-builder] 	
++-------------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name              | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-------------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| change Car Owner. | 38   | 62   | 50.7            | 2.09            | 0.31            | 1.43            | 47.5             |
++-------------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2021.05.31-06:09:54.398[32m info [39m [caliper] [round-orchestrator] 	Finished round 2 (change Car Owner.) in 2.18 seconds
+2021.05.31-06:09:54.399[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2021.05.31-06:09:54.400[32m info [39m [caliper] [report-builder] 	### All test results ###
+2021.05.31-06:09:54.404[32m info [39m [caliper] [report-builder] 	
++-------------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name              | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-------------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| Create Car.       | 100  | 0    | -303.0          | 2.29            | 0.33            | 1.32            | 100000.0         |
+|-------------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| change Car Owner. | 38   | 62   | 50.7            | 2.09            | 0.31            | 1.43            | 47.5             |
++-------------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2021.05.31-06:09:54.429[32m info [39m [caliper] [report-builder] 	Generated report with path /home/helmi/2peer3ordererCouchDB/report.html
+2021.05.31-06:09:54.429[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2021.05.31-06:09:54.429[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2021.05.31-06:09:54.430[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 21.987 seconds. Total rounds: 2. Successful rounds: 2. Failed rounds: 0.
+2021.05.31-06:09:54.430[32m info [39m [caliper] [caliper-engine] 	Skipping end command due to benchmark flow conditioning
+2021.05.31-06:09:54.430[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished
+2021.05.31-06:09:54.431[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting

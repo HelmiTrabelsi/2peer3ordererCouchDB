@@ -44,7 +44,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
         this.txIndex = 0;
         global.initvar=[]
 
-        PythonShell.run('/home/helmi/2peer3ordererCouchDB/caliper/fabcar/aa.py', null, function (err,results) {
+        PythonShell.run('/home/helmi/2peer3ordererCouchDB/caliper/fabcar/script.py', null, function (err,results) {
             if (err) throw err;
             console.log("11111111")
             results[0] = results[0].substring(1);
