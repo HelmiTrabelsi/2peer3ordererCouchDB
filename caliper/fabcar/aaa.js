@@ -15,6 +15,7 @@
 'use strict';
 
 const { WorkloadModuleBase } = require('@hyperledger/caliper-core');
+const PythonShell = require('python-shell').PythonShell;
 var MVCC = 0
 var EMVCC = 0
 var EMVCC_time=0
@@ -34,27 +35,48 @@ class CreateCarWorkload extends WorkloadModuleBase {
     /**
      * Initializes the workload module instance.
      */
+    /* async initializeWorkloadModule(workerIndex, totalWorkers, roundIndex, roundArguments, sutAdapter, sutContext) {
+        //await super.initializeWorkloadModule(workerIndex, totalWorkers, roundIndex, roundArguments, sutAdapter, sutContext);
+
+    }*/
     constructor() {
         super();
         this.txIndex = 0;
+        global.initvar=[]
 
+        PythonShell.run('/home/helmi/2peer3ordererCouchDB/caliper/fabcar/aa.py', null, function (err,results) {
+            if (err) throw err;
+            console.log("11111111")
+            results[0] = results[0].substring(1);
+            results[0] = results[0].slice(0, -1)
+            global.initvar = results[0].split(",");
+
+            for (let i = 0; i < global.initvar.length; i++) {
+                global.initvar[i]= (global.initvar[i]).substring(2) 
+                global.initvar[i]= (global.initvar[i]).slice(0, -1)            
+              }          
+        });   
     }
+
+    
 
     /**
      * Assemble TXs for the round.
      * @return {Promise<TxStatus[]>}
     */
     async submitTransaction() {
-        const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-        var r= random(2, 6);
+        //console.log(this.Car_list)
         this.txIndex++;
-        let carNumber
-        carNumber = 'Client' + this.workerIndex + '_CAR' + this.txIndex.toString();
+        let carNumber      
+        carNumber = global.initvar[this.txIndex]
+        console.log(((global.initvar[this.txIndex])))
+
+       /* 
         var s = carNumber.slice(-1)
 
         //######### 20% MVCC Conflict         
         if (s == 2 || s == 3) {
-            carNumber =  'Client' + this.workerIndex+ '_CAR'+ (this.txIndex-r).toString();
+            carNumber = 'Client' + this.workerIndex + '_CAR1';
         }
         else {
             carNumber = 'Client' + this.workerIndex + '_CAR' + this.txIndex.toString();
@@ -63,7 +85,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
         /*
         //######### 40% MVCC Conflict         
                 if(s == 2 || s==3 || s == 4 || s==5) {
-                    carNumber =  'Client' + this.workerIndex+ '_CAR'+ (this.txIndex-r).toString();
+                    carNumber =  'Client' + this.workerIndex+ '_CAR1';
                 }
                 else {
                     carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();           
@@ -75,7 +97,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
                     carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
                 }
                 else {
-                    carNumber =  'Client' + this.workerIndex+ '_CAR'+ (this.txIndex-r).toString();
+                    carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
                 }
         */
         /* 
@@ -84,7 +106,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
                     carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
                 }
                 else {
-                    carNumber =  'Client' + this.workerIndex+ '_CAR'+ (this.txIndex-r).toString();
+                    carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
                 }
         */
 
@@ -96,7 +118,7 @@ class CreateCarWorkload extends WorkloadModuleBase {
                     carNumber = 'Client' + this.workerIndex + '_CAR'+ this.txIndex.toString();
                 }
                 else {
-                    carNumber =  'Client' + this.workerIndex+ '_CAR'+ (this.txIndex-r).toString(); 
+                    carNumber =  'Client' + this.workerIndex+ '_CAR1'; 
                 }
         */
 
@@ -110,9 +132,9 @@ class CreateCarWorkload extends WorkloadModuleBase {
             timeout: 60
         };
 
-        if (this.txIndex === this.roundArguments.assets) {
+        /*if (this.txIndex === this.roundArguments.assets) {
             this.txIndex = 0;
-        }
+        }*/
         const response = await this.sutAdapter.sendRequests(args)
             .then(function (data) {
                 var res = JSON.parse(JSON.stringify(data))
@@ -132,7 +154,6 @@ class CreateCarWorkload extends WorkloadModuleBase {
                     console.log("Time to dectet conflict for transaction " + res.status.id + ": " + diff);
                     EMVCC++
                     EMVCC_time=EMVCC_time+diff
-                
                 } else if (diff>700 && res.status.status == 'failed') {
                     console.log("Time to dectet conflict for transaction " + res.status.id + ": " + diff);
                     MVCC++
